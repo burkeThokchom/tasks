@@ -1,5 +1,6 @@
 # tasks
 Pls follow setp-by-step. Avoid skipping
+Also,  NODE_ENV should always be local for this project to work
 Prerequisites:
 1. node version 18.13.0
 2. npm version 8.19.3 
