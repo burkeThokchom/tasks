@@ -1,12 +1,12 @@
 require('dotenv').config();
 module.exports = {
     local: {
-        username: 'postgres',
-        password: 'pg-admin',
-        database: 'tasks',
-        host: '127.0.0.1',
-        port: 5432,
-        dialect: 'postgres',
+        username: process.env.DB_USERNAME,
+        password: process.env.DB_PASS,
+        database: process.env.DB_NAME,
+        host: process.env.DB_HOST,
+        port: process.env.DB_PORT,
+        dialect: process.env.DB_DIALECT,
         seederStorage: 'sequelize',
         seederStorageTableName: 'sequelizeData',
         dialectOptions: { decimalNumbers: true },
